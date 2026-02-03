@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  background: #1a1b26;
+  color: #c0caf5;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.tutor-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 640px;
+  width: 100%;
+}
+
+.avatar-container {
+  margin-bottom: 1.5rem;
+}
+
+.panel {
+  background: #24283b;
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.panel h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.9rem;
+  color: #7aa2f7;
+}
+
+.panel p,
+.panel pre {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.controls {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.75rem;
+}
+
+.btn {
+  background: #414868;
+  color: #c0caf5;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.btn:hover {
+  background: #565f89;
+}
+
+.btn.primary {
+  background: #7aa2f7;
+  color: #1a1b26;
+}
+
+.btn.primary:hover {
+  background: #89b4fa;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.input-text {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #414868;
+  background: #1a1b26;
+  color: #c0caf5;
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+}
+
+.input-text:focus {
+  outline: none;
+  border-color: #7aa2f7;
+}
+
+.status {
+  font-size: 0.85rem;
+  color: #a9b1d6;
+  margin-top: 0.5rem;
+}
+
+.status.error {
+  color: #f7768e;
+}
+
+.status.listening {
+  color: #9ece6a;
+}
+
+.status.talking {
+  color: #ff9e64;
+}
+
+.concept-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.concept-list li {
+  margin: 0.25rem 0;
+}
+
+.concept-list button {
+  background: transparent;
+  border: 1px solid #414868;
+  color: #c0caf5;
+  padding: 0.35rem 0.75rem;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.concept-list button:hover {
+  border-color: #7aa2f7;
+  background: #414868;
+}

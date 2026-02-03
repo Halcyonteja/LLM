@@ -1,0 +1,27 @@
+# Local AI Tutor MVP — backend deps (no cloud APIs)
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+websockets>=12.0
+python-multipart>=0.0.6
+
+# LLM via llama-cpp-python (GPU if available)
+llama-cpp-python>=0.2.0
+
+# STT: openai-whisper (fully local)
+openai-whisper>=20231117
+
+# TTS: Piper via subprocess; optional Python wrapper
+# pip run piper-tts from CLI; we use subprocess
+
+# Memory & vectors
+aiosqlite>=0.19.0
+faiss-cpu>=1.7.4
+numpy>=1.24.0
+sentence-transformers>=2.2.0
+
+# Audio I/O
+pydub>=0.25.1
+soundfile>=0.12.0
+numpy>=1.24.0
+
+# No pydantic-settings: config uses os.environ
