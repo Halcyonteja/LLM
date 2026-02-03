@@ -131,7 +131,6 @@ LLM/
 **Backend**
 
 ```bash
-cd "c:\Users\coole\Downloads\AI App\LLM"
 python -m venv .venv
 .venv\Scripts\activate   # Windows
 # source .venv/bin/activate   # macOS/Linux
